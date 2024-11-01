@@ -11,9 +11,15 @@
 
 `npm create astro@latest projetName
 `
-## Instalar tailwind
+## instalar tailwind
 
 `npx astro add tailwind
 `
+
+## instalar Prettier
+
+`npm install --save-dev prettier prettier-plugin-astro
+`
+
 ## Ejecutar Pruebas
 npm test
