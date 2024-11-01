@@ -11,5 +11,9 @@
 
 `npm create astro@latest projetName
 `
+## Instalar tailwind
+
+`npx astro add tailwind
+`
 ## Ejecutar Pruebas
 npm test
