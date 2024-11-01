@@ -15,5 +15,27 @@
 
 `npx astro add tailwind
 `
+## Instalar prettier
+`npm install --save-dev prettier prettier-plugin-astro
+`
+### En prettierrc.cjs
+
+```js  
+  module.exports = {
+  semi: false,
+  singleQuote: true,
+  tabWidth: 2,
+  useTabs: true,
+  plugins: [require('prettier-plugin-astro')],
+  overrides: [
+    {
+      files: '**/*.astro',
+      options: {
+        parser: 'astro',
+      },
+    },
+  ],
+}
+``` 
 ## Ejecutar Pruebas
 npm test
