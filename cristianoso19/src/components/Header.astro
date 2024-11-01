@@ -1,5 +1,9 @@
 ---
+interface Props {
+  title: string;
+}
 
+const {title} = Astro.props;
 ---
 
 <div class="navbar bg-base-100">
@@ -35,7 +39,7 @@
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl">Cristianoso19.dev</a>
+    <a class="btn btn-ghost text-xl">{title}</a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
