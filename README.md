@@ -37,5 +37,12 @@
   ],
 }
 ``` 
+## Trabajar con MDX
+Con esto, Astro automáticamente instalará y configurará los archivos necesarios para que funcionen los archivos MDX, también agregará la configuración necesario en el archivo de configuración de Astro de forma automática.
+
+`npx astro add mdx
+`
+
+
 ## Ejecutar Pruebas
 npm test
