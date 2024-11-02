@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Skills from "../components/Skills.astro";
 import Frameworks from "../components/Frameworks.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -26,10 +27,16 @@ import Frameworks from "../components/Frameworks.astro";
       Let’s innovate together!
     </p>
     <h3 class="font-bold my-4 text-2xl text-left">Skills</h3>
-	<Skills />
+    <Skills />
     <h3 class="font-bold my-4 text-2xl text-left">Frameworks</h3>
-	<Frameworks />
-    <h3 class="font-bold my-4 text-2xl text-left">Portfolio</h3>
+    <Frameworks />
+    <h3 class="font-bold my-4 text-2xl text-left">My projects</h3>
+    <h4 class="my-4 text-xl text-left text-slate-500">
+      Explore some of my recent projects, where I blend creativity and technical
+      expertise to deliver impactful solutions:
+    </h4>
+	<Projects />
+
     <h3 class="font-bold my-4 text-2xl text-left">Contact</h3>
   </main>
 </Layout>

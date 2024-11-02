@@ -1,0 +1,27 @@
+---
+import Card from "./Card.astro";
+const allProjects = await Astro.glob("../content/*.md");
+---
+
+<div>
+  <ul role="list" class="link-card-grid">
+    {
+      allProjects.map((project) => (
+        <Card
+          title={project?.frontmatter?.title}
+          time={project?.frontmatter?.pubDate}
+          tags={project?.frontmatter?.tags}
+        />
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
