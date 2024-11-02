@@ -19,7 +19,6 @@
 `npm install --save-dev prettier prettier-plugin-astro
 `
 ### En prettierrc.cjs
-
 ```js  
   module.exports = {
   semi: false,
