@@ -1,16 +1,23 @@
 ---
 import Card from "./Card.astro";
-const allProjects = await Astro.glob("../content/*.md");
+const allProjects = await Astro.glob("../content/projects/*.md");
+
+import { getCollection } from "astro:content";
+
+const projects = (await getCollection("projects")).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+)
 ---
 
 <div>
   <ul role="list" class="link-card-grid">
     {
-      allProjects.map((project) => (
+      projects.map((project) => (
         <Card
-          title={project?.frontmatter?.title}
-          time={project?.frontmatter?.pubDate}
-          tags={project?.frontmatter?.tags}
+          title={project.data.title}
+          time={project.data.pubDate}
+          tags={project.data.tags}
+          slug={project.slug}
         />
       ))
     }
