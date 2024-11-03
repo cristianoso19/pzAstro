@@ -41,7 +41,9 @@ Con esto, Astro automáticamente instalará y configurará los archivos necesari
 
 `npx astro add mdx
 `
-
+o
+`npx run astro add mdx
+`
 
 ## Ejecutar Pruebas
 npm test
