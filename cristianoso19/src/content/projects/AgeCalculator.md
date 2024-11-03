@@ -2,8 +2,9 @@
 title: "Age Calculator"
 pubDate: "2023-10-01"
 description: "2023-10-01"
-image: 
+image: "https://res.cloudinary.com/dz209s6jk/image/upload/v1680193823/Challenges/edhwnh0nvy7vyhejeccf.jpg" 
 tags: ["javascript", "tailwind"]
+layout: "../../layouts/Projects.astro"
 ---
 What is Lorem Ipsum?
 
