@@ -6,7 +6,7 @@ import { getCollection } from "astro:content";
 
 const projects = (await getCollection("projects")).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
-)
+);
 ---
 
 <div>
@@ -25,10 +25,10 @@ const projects = (await getCollection("projects")).sort(
 </div>
 
 <style>
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
 </style>
