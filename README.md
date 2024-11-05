@@ -11,7 +11,7 @@
 
 `npm create astro@latest projetName
 `
-## Instalar tailwind
+## instalar tailwind
 
 `npx astro add tailwind
 `
@@ -41,7 +41,9 @@ Con esto, Astro automáticamente instalará y configurará los archivos necesari
 
 `npx astro add mdx
 `
-
+o
+`npx run astro add mdx
+`
 
 ## Ejecutar Pruebas
 npm test

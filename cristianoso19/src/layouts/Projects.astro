@@ -1,0 +1,24 @@
+---
+const {
+  content: { title, description, image, tags, pubDate },
+} = Astro.props;
+---
+
+<div class="hero bg-base-200 min-h-screen">
+  <div class="hero-content flex-col  px-16">
+    <img src={image} alt={title} class="max-w-sm rounded-lg shadow-2xl" />
+    <div>
+      <h1 class="text-5xl font-bold">{title}</h1>
+      <span>
+        <time class="pr-2">{pubDate}</time>
+        <div class="card-actions justify-end">
+          {tags.map((item) => <div class="badge badge-outline">{item}</div>)}
+        </div>
+      </span>
+      <article class="py-6">
+        <slot />
+      </article>
+      <button class="btn btn-primary">Get Started</button>
+    </div>
+  </div>
+</div>

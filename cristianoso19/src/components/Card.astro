@@ -3,9 +3,10 @@ export interface Props {
   title: string;
   time: string;
   tags: string[];
+  slug: string;
 }
 
-const { title, time, tags } = Astro.props;
+const { title, time, tags, slug } = Astro.props;
 ---
 
 <div class="card bg-base-100 shadow-xl">
@@ -26,7 +27,7 @@ const { title, time, tags } = Astro.props;
       {tags.map((item) => <div class="badge badge-outline">{item}</div>)}
     </div>
     <div class="card-actions justify-end">
-      <button class="btn btn-outline glass btn-sm">Learn more...</button>
+      <a class="btn btn-outline glass btn-sm" href={`/projects/${slug}`}>Learn more...</a>
     </div>
   </div>
 </div>
